@@ -1,4 +1,4 @@
-module mark2doc
+module github.com/yqchilde/mark2doc
 
 go 1.24.1
 
