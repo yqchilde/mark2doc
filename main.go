@@ -110,7 +110,7 @@ func main() {
 	// 写入HTML文件
 	err = os.WriteFile(*outputFile, htmlData, 0644)
 	if err != nil {
-		fmt.Printf("写入HTML文件错误: %v\n", err)
+		fmt.Printf("生成HTML文件错误: %v\n", err)
 		os.Exit(1)
 	}
 

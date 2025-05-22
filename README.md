@@ -2,6 +2,12 @@
 
 将markdown生成单html的文档项目
 
+## 安装
+
+```shell
+go install github.com/yqchilde/mark2doc
+```
+
 ## 用法
 
 ```shell
