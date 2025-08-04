@@ -23,3 +23,4 @@ go install github.com/yqchilde/mark2doc
 ## 参考项目
 
 * [https://github.com/cayxc/Mdtht](https://github.com/cayxc/Mdtht)
+* [https://highlightjs.org/download](https://highlightjs.org/download)
