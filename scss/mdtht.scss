@@ -1,0 +1,217 @@
+@import "global";
+@import "hljs";
+//root
+* {
+  margin: 0;
+  padding: 0;
+  tab-size: 4;
+  -webkit-tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+}
+
+:root {
+  font-family: "PingFang SC", Helvetica, "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 62.5%;
+  background-color: $bg-color;
+  color: $text-color;
+  height: 100%;
+  overflow: hidden;
+  letter-spacing: .05rem;
+}
+
+body {
+  font-size: $size-16;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  line-height: 1.5;
+  margin: 32px 0 16px;
+  color: $title-color;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+hr {
+  border: none;
+  height: .1rem;
+  margin: $size-16 0;
+  background: $grey-color;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: $color-2-0-c;
+  text-shadow: none;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+a {
+  text-decoration: none;
+  color: $color-1;
+  cursor: pointer;
+  font-weight: 500;
+  text-underline-offset: 4px;
+
+  &:hover {
+    color: $color-2;
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: $size-16 0;
+}
+
+strong {
+  font-weight: bold;
+  color: $title-color;
+}
+
+u {
+  text-decoration-color: $title-color;
+  -moz-text-decoration-color: $title-color;
+  text-underline-offset: 4px;
+}
+
+em {
+  font-weight: 400;
+}
+
+del {
+  color: $text-grey;
+  text-decoration: line-through;
+  text-decoration-color: $color-2;
+  -moz-text-decoration-color: $color-2;
+}
+
+/*sup,sub*/
+sup, sub {
+  font-size: 1.2rem;
+  padding: 0 .1rem;
+}
+
+sup.md-footnote {
+  padding: 0 .2rem;
+
+  &:hover {
+    color: $color-2;
+    cursor: pointer;
+  }
+}
+
+mark {
+  background-color: $color-1;
+  padding: 0 .4rem;
+  @include border-radius(0.4rem);
+  color: $bg-color;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+kbd {
+  display: inline-block;
+  line-height: $size-22;
+  border: none;
+  background: $title-color;
+  body .typora-export-content,
+  #right-container {
+    height: auto !important; /*解决浏览器打印只有一页问题*/
+    padding: 0 !important;
+    margin: 0 !important;
+    background: white;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+  }
+  body .typora-export-sidebar {
+    width: 0 !important;
+    display: none !important;
+  }
+  #left-container,
+  #resize-control,
+  #list-container,
+  #switch-button {
+    width: 0;
+    display: none;
+  }
+  #content > *:first-of-type {
+    margin-top: 0 !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  body,
+  body div,
+  body pre,
+  body ul,
+  body section,
+  body #write {
+    scrollbar-width: none !important;
+  }
+  table,
+  pre,
+  blockquote,
+  .md-alert, {
+    page-break-inside: avoid;
+  }
+  pre,
+  code,
+  tt {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 24pt 0 12pt;
+  }
+  h1 {
+    font-size: 24pt;
+  }
+  h2 {
+    font-size: 21pt;
+  }
+  h3 {
+    font-size: 18pt;
+  }
+  h4 {
+    font-size: 15pt;
+  }
+  h5 {
+    font-size: 13.5pt;
+  }
+  h6 {
+    font-size: 12pt;
+  }
+  p {
+    font-size: 12pt;
+    margin: 12pt 0;
+  }
+}

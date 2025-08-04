@@ -32,3 +32,4 @@ subscription/cert/
 
 *.pb.go
 *.log
+mark2doc
